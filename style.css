@@ -413,15 +413,89 @@ body {
 .mobile-icon {
   display: none;
 }
+.hamburger {
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #FFFFFF;
+}
+nav .nav-logo a{
+    width: 10%;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+nav .nav-logo a> img{
+    width: 50px;
+    height: auto;
+}
+.nav-logo a > h1 {
+    color: black;
+}
 
+nav ul li a:hover{
+    color: rgb(244, 119, 119);
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+    color :black;
+
+}
 @media (max-width: 768px) {
   /* 1. Header Section */
+  nav{
+     display: none;
+  }
+  .hamburger{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   height: 64px;
+   box-sizing: border-box;
+   background-color: #fff;
+
+  }
+  .hamburger span > img{
+    width: 50px;
+    height: auto;
+    align-self: center;
+  }
+  .hamburger span{
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  }
   .header {
     height: 64px;
+    width: 100%;
     padding: 0 var(--spacing-md); /* 16px */
     margin-bottom: 0;
+    background-color: #fff;
   }
-  
+
+.logo-container {
+    display: none;
+  }
+
   .logo-text,
   .logo-dark,
   .nav-menu a.desktop-link {
