@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB Assessment</title>
+    <title>Colmar Academy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <img src="capstone_colmar_assets/images/ic-logo.svg" alt="WEB Assessment">
+            <img src="capstone_colmar_assets/images/ic-logo.svg" alt="Colmar Academy" class="logo-img">
             <span class="logo-text">COLMAR</span>
             <span class="logo-dark">ACAEMY</span>
         </div> 
         <nav class="nav-menu">
-            <a href="#">On-campus</a>
-            <a href="#">Online</a>
-            <a href="#">For companies</a>
-            <a href="#"class="nav-signin">Sign in</a>  
+            <a href="#" class="desktop-link">On-campus</a>
+            <a href="#" class="desktop-link">Online</a>
+            <a href="#" class="desktop-link">For companies</a>
+            <a href="#" class="nav-signin">Sign in</a>
+            <a href="#" class="mobile-icon"><img src="capstone_colmar_assets/images/ic-on-campus.svg" alt="On campus"></a>
+            <a href="#" class="mobile-icon"><img src="capstone_colmar_assets/images/ic-online.svg" alt="Online"></a>
+            <a href="#" class="mobile-icon"><img src="capstone_colmar_assets/images/ic-login.svg" alt="Sign in"></a>
         </nav>
     </header>
+    <!--hero section-->>
     <section class="hero-section">
         <div class="box-hero-img">
             <img src="capstone_colmar_assets\images\banner.jpg" alt="Student" class="box-img">
@@ -30,6 +34,7 @@
             <button class="btn-start">Start here</button>
         </div>
     </section>
+
     <main class="main-container">
         <article class="featued-column">
             <div class="column-box-img">
@@ -42,40 +47,51 @@
             </div>
         </article>
         <aside class="side-column">
-
-            <div class="even-card">
-                <div class="even-box-img">
-                    <img src="capstone_colmar_assets\images\information-orientation.jpg" alt="student">
-                </div>
+        <!-- card 1-->
+        <div class="event-card">
+            <div class="event-box-img">
+                <img src="capstone_colmar_assets/images/information-orientation.jpg" alt="student">
             </div>
-            <div class="even-content">
+            <div class="event-content">
                 <h3>Orientation date</h3>
-                <p class="event-content-p">Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <a href="#" class="Read more"></a>
+                <p class="event-date">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                <a href="#" class="read-more">Read more</a>
             </div>
-
-            <div class="even-card">
-                <div class="even-box-img">
-                    <img src="capstone_colmar_assets\images\information-campus.jpg" alt="campus">
-                </div>
+        </div>
+         <!-- card 2-->
+        <div class="event-card">
+            <div class="event-box-img">
+                <img src="capstone_colmar_assets/images/information-campus.jpg" alt="campus">
             </div>
-            <div class="even-content">
+            <div class="event-content">
                 <h3>Our campus</h3>
                 <p class="event-content-p">Find which campus is close by you</p>
-                <a href="#" class="Read more"></a>
+                <a href="#" class="read-more">Read more</a>
             </div>
+        </div>
+        <!-- card 3-->     
+        <div class="event-card active">
+            <div class="event-box-img">
+                <img src="capstone_colmar_assets/images/information-guest-lecture.jpg" alt="lecture">
+            </div>
+            <div class="event-content">
+                <h3>Our guest lecture</h3>
+                <p class="event-content-p">Join a keynote with Oliver Sack about music in medical treatment</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+    </aside>
+  </main>
 
+    <section class="courses-section">
 
-        </aside>
-    </main>
+        <h2 class="section-title">Start learning</h2>
 
-    <section class="courses section">
-        <h2 class="section-title">start learning</h2>
         <div class="courses-grid">
             <!-- box 1 -->>
             <div class="course-card">
                 <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
+                    <img src="capstone_colmar_assets\images\course-software.jpg" alt="Software engineering course">
                 </div>
                 <div class="course-content">
                     <h3>Software engineering</h3>
@@ -83,90 +99,86 @@
                     <p>Web Development, Mobile Development, IOT, APIs</p>
                 </div>
             </div>
-        </div>
 
-        <!-- box 2 -->>
+            <!-- box 2 -->>
             <div class="course-card">
                 <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
+                    <img src="capstone_colmar_assets\images\course-computer-art.jpg" alt="Computer art course">
                 </div>
                 <div class="course-content">
-                    <h3>Software engineering</h3>
+                    <h3>Computer art</h3>
                     <span class="course-tag">COURSES</span>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
+                    <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
                 </div>
             </div>
-        </div>
 
-        <!-- box 3 -->>
+            <!-- box 3 -->>
             <div class="course-card">
                 <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
+                    <img src="capstone_colmar_assets\images\course-design.jpg" alt="Design">
                 </div>
                 <div class="course-content">
-                    <h3>Software engineering</h3>
+                    <h3>Design</h3>
                     <span class="course-tag">COURSES</span>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
+                    <p>User Experience Design, User Research, Visual Design</p>
                 </div>
             </div>
-        </div>
 
-        <!-- box 4 -->>
+            <!-- box 4 -->>
             <div class="course-card">
                 <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
+                    <img src="capstone_colmar_assets\images\course-data.jpg" alt="Data course">
                 </div>
                 <div class="course-content">
-                    <h3>Software engineering</h3>
+                    <h3>Data</h3>
                     <span class="course-tag">COURSES</span>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
+                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+            </div>       
+            <!-- box 5 -->>
+            <div class="course-card">
+                <div class="course-box">
+                    <img src="capstone_colmar_assets\images\course-business.jpg" alt="Business course">
+                </div>
+                <div class="course-content">
+                    <h3>Business</h3>
+                    <span class="course-tag">COURSES</span>
+                    <p>Product Development, Business Development, Startup</p>
+                </div>
+            </div>
+            <!-- box 6 -->>
+            <div class="course-card">
+                <div class="course-box">
+                    <img src="capstone_colmar_assets\images\course-marketing.jpg" alt="Marketing course">
+                </div>
+                <div class="course-content">
+                    <h3>Marketing</h3>
+                    <span class="course-tag">COURSES</span>
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
                 </div>
             </div>
         </div>        
-        <!-- box 5 -->>
-            <div class="course-card">
-                <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
-                </div>
-                <div class="course-content">
-                    <h3>Software engineering</h3>
-                    <span class="course-tag">COURSES</span>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
-                </div>
-            </div>
-        </div>
-        <!-- box 6 -->>
-            <div class="course-card">
-                <div class="course-box">
-                    <img src="colmar_assets\images\course-software.jpg" alt="Software">
-                </div>
-                <div class="course-content">
-                    <h3>Software engineering</h3>
-                    <span class="course-tag">COURSES</span>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
-                </div>
-            </div>
-        </div>        
-    </section>
+</section>
 
 <section class="thesis-section">
-    <h2 class="section-title">Thesis exhibit</h2>
+    <h2 class="section-title">Thesis exhibits</h2>
 
     <div class="thesis-container">
         <article class="thesis-left">
             <div class="video-box">
-                <video src="capstone_colmar_assets\videos\thesis.mp4" controls class="thesis-video"></video>
+                <video src="capstone_colmar_assets/videos/thesis.mp4" controls class="thesis-video"></video>
             </div>
             <div class="thesis-left-body">
-                <h3>Reimagin urban</h3>
-                <p>Dolor sit amet</p>
+                <h3>Reimagine urban</h3>
+                <p class="quote">"Dolor sit amet consectetur adipisicing elit. Velit libero eligendi consectetur, dolorum amet harum molestiae voluptatibus. Voluptatum, porro beatae itaque sequi, repellat nostrum a at dolor harum quisquam aperiam."</p>
             </div>
         </article>
-        <!-- card 1 -->>
+        
         <aside class="thesis-right">
+            <!-- card 1 -->>
             <div class="thesis-card">
                 <div class="thesis-box-img">
-                    <img src="colmar_assets\images\thesis-fisma.jpg" alt="thesis-fisma">
+                    <img src="capstone_colmar_assets\images\thesis-fisma.jpg" alt="thesis-fisma">
                 </div>
                 <div class="thesis-card-content">
                     <h4>Fisma: Design and Prototype</h4>
@@ -175,14 +187,13 @@
             </div>
 
         <!-- card 2 -->>
-        <aside class="thesis-right">
             <div class="thesis-card">
                 <div class="thesis-box-img">
-                    <img src="colmar_assets\images\thesis-now-and-then.jpg" alt="thesis-now-and-then">
+                    <img src="capstone_colmar_assets\images\thesis-now-and-then.jpg" alt="thesis-now-and-then">
                 </div>
                 <div class="thesis-card-content">
                     <h4>Now and then</h4>
-                    <p>Research atudy about New York</p>
+                    <p>Research study about New York</p>
                 </div>
             </div>
         </aside>
