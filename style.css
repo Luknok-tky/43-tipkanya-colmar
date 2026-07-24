@@ -199,7 +199,7 @@ body {
 
 .even-box-img img {
     width: 100%;
-    height: 80px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -208,5 +208,131 @@ body {
 }
 
 .even-content h3 {
-    font-size: ;
+    font-size: 1rem;
+    margin: 0 0 4px 0;
 }
+
+.even-content p {
+    font-size: 1rem;
+    color: #888888;
+    margin: 0 0 8px 0;
+}
+
+.read-more {
+    font-size: 1rem;
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.courses-section {
+    margin-top: var(--spacing-xl);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    font-size: 2rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--spacing-lg);
+}
+
+.course-card {
+    background: whitesmoke;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid snow;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 08);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-content h3 {
+    margin: 0;
+}
+
+.course-tag {
+    color: #888888;
+    font-size: 0.9rem;
+    margin:  10px 0;
+}
+
+.thesis-section {
+    margin-top: var(--spacing-xl);
+}
+
+.thesis-container {
+    display: flex;
+    gap: var(--spacing-xl);
+}
+
+.thesis-left {
+    width: 60%;
+}
+
+.thesis-left video {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.thesis-left h3 {
+    margin-top: var(--spacing-md);
+}
+
+.thesis-left p {
+    columns: gray;
+    line-height: 1.6;
+}
+
+.thesis-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.footer {
+    margin-top: var(--spacing-xl);
+    border-top: #ffffff;
+    padding: var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    color: gray;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a{
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: blue;
+}
+
